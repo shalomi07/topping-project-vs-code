@@ -3,27 +3,61 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dinfrog | Home</title>
+        <title>Dinfrog | Competition</title>
         <link rel="stylesheet" href="competition.css">
     </head>
 
+
     <body>
         <header>
-            <h1>Dinfrog's Blog</h1>
+            <h1>Dinfrog's Math Competition!</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Competition</a></li>
+                    <li><a href="competition.html">Competition</a></li>
                 </ul>
         </header>
         <main>
-            <section class="about">
-                <h2>Who is Dinfrog?</h2>
-                <img src="dinfroghello.jpeg" alt="Dinfrog Image" class="dinfrog-image">
-                <p>Hello! This is Dinfrog, your personal dino assistant! Some call him a frog for a reason, while some accept him as truly a dino.</p>
-                <p>Don't be afraid, he's cute and kind! But you might want to note something.</p>
-                <p>One thing about Dinfrog: HE LOVES ICE CREAM! And, you better get away from his ice cream, or he'll be as grumpy as a witch!</p>
-                </section>
-                <section class="button">
-                    <a href="
-                </section>
+            <section class="competition">
+                <div class="whoisdinfrog">
+                     <img src="dinfrogicecream.jpeg" alt="Dinfrog Image" class="dinfrog-image">
+                <h2>The Annual International Math Competition for Elementary, Junior and Senior High Schoolers!</h2>
+                </div>
+                <div class="requirement">
+                    <h3>Who can join?</h3>
+                    <ul>
+                        <li>Currently in grade 1-12</li>
+                        <li>Passionate in math</li>
+                        <li>From anywhere around the world</li>
+                        <li>Has a computer/laptop</li>
+                    </ul>
+                </div>
+                <div class="requirement">
+                    <h3>Timeline</h3>
+                    <ul>
+                        <li>1-12 January 2040: Registration open!</li>
+                        <li>13 January 2040: Technical meeting (online using ZOOM Meetings)</li>
+                        <li>20 January 2040: Preliminary Round (online)</li>
+                        <li>29 February 2040: Announcement</li>
+                        <li>26 March 2040: Final Round in Indonesia</li>
+                    </ul>
+                </div>
+            </section>
+                    <button id="registershow" class="dinfrogugly">Register now!</button>
+                    <div id="popup">
+                        <b>The competition has not been open yet. Please try again later.</b>
+                        <button id="registerclose" class="dinfroguglyclose">OK</button>
+                    </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Dinfrog's Blog. All rights reserved.</p>
+        </footer>
+        <script>
+            document.getElementById("registershow").addEventListener("Click", function(r){
+                document.getElementById("popup").style.display = "block";
+                r.preventDefault(); 
+            });
+            document.getElementById("registerclose").addEventListener("click", function(r) {
+                document.getElementById("popup").style.display = "none";
+                r.preventDefault(); 
+            });

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dinfrog | Home</title>
+        <link rel="stylesheet" href="competition.css">
+    </head>
+
+
+    <body>
+        <header>
+            <h1>Dinfrog's Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="competition.html">Competition</a></li>
+                </ul>
+        </header>
+        <main class="index">
+            <section class="about">
+                <h2>Who is Dinfrog?</h2>
+                <div class="whoisdinfrog">
+                    <img src="dinfroghello.jpeg" alt="Dinfrog Image" class="dinfrog-image">
+                    <p class="aboutdinfrog">Hello! This is Dinfrog, your personal dino assistant! Some call him a frog for a reason, while some accept him as truly a dino. Don't be afraid, he's cute and kind! But you might want to note something. One thing about Dinfrog: HE LOVES ICE CREAM! And, you better get away from his ice cream, or he'll be as grumpy as a witch!</p>
+                    </div>
+                </section>
+                <section class="button">
+                    <button class="joincompetition" onclick="location.href='competition.html'">Join Dinfrog Competition!</button>
+                    <button id="dinfroguglyshow" class="dinfrogugly">Dinfrog is ugly!</button>
+                    <div id="popup">
+                        <b>WHAT DID YOU SAY? HOW DARE YOU HURT THIS CUTE DINO?!</b>
+                        <button id="dinfroguglyclose" class="dinfroguglyclose">Sorry, Dinfrog!</button>
+                    </div>
+                    <!--<button onclick="location.href='index.html'">Back to Home</button>-->
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Dinfrog's Blog. All rights reserved.</p>
+        </footer>
+    <script>
+            document.getElementById("dinfroguglyshow").addEventListener("click", function(d) {
+                document.getElementById("popup").style.display = "block";
+                d.preventDefault(); 
+                });
+            document.getElementById("dinfroguglyclose").addEventListener("click", function(d) {
+                document.getElementById("popup").style.display = "none";
+                d.preventDefault(); 
+                });
+    </script>
+        </body>
+ 
