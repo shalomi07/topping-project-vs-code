@@ -1,8 +1,10 @@
 header, footer{
-    font-size: 28px;
     margin: 0;
     padding: 20px;
     background-image: linear-gradient(45deg, #cbfceb, #cfffaf);
+}
+header{
+    font-size: 28px;
 }
 
 nav ul{
