@@ -81,7 +81,7 @@ header h1{
     padding: 20px;
     font-size: 24px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1600px) {
     .aboutdinfrog, .requirement ul {
         font-size: 18px;
     }
